@@ -1,0 +1,41 @@
+﻿@using MVCLearning.Models
+@using System.Web.Mvc
+@using System.Web.Mvc.Html
+
+@helper EmitCleanUnicodeUrl(WebViewPage page, MvcHtmlString data)
+{
+    @page.Html.Raw(HttpUtility.UrlDecode(data.ToString()))
+}
+
+@helper GetProductsList(List<Product> products)
+{
+    <ul>
+        @foreach (var item in products)
+        {
+            <li>@item.Name ($@item.Price)</li>
+        }
+    </ul>
+}
+
+@helper GetProductsTable(WebViewPage page, List<Product> products)
+{
+    <table class="table">
+        @foreach (var item in products)
+        {
+            <tr>
+                <td>@page.Html.DisplayFor(modelItem => item.Name)</td>
+
+                <td>@page.Html.DisplayFor(modelItem => item.Price)</td>
+
+                <td>@page.Html.DisplayFor(modelItem => item.ProductNumber)</td>
+
+                <td>
+                    @EmitCleanUnicodeUrl(page, @page.Html.ActionLink("ویرایش", "Edit", new { id = item.ProductNumber })) |
+                    @EmitCleanUnicodeUrl(page, @page.Html.ActionLink("جزییات", "Details", new { id = item.ProductNumber })) |
+                    @EmitCleanUnicodeUrl(page, @page.Html.ActionLink("حذف", "Delete", new { id = item.ProductNumber })) |
+                    <li>@EmitCleanUnicodeUrl(page, @page.Html.ActionLink(item.Name + " (Using HttpUtility.UrlDecode)", "Details", new { id = item.ProductNumber }))</li>
+                </td>
+            </tr>
+        }
+    </table>
+}

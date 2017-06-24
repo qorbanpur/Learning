@@ -1,0 +1,30 @@
+﻿@model MVCLearning.Models.Employee
+
+<tr>
+    <td>
+        @Html.DisplayFor(Model => Model.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Salary)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Password)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.IsMale)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.AddDate)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.IsAdmin)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = Model.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
+    </td>
+</tr>

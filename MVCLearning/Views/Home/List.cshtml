@@ -1,0 +1,39 @@
+﻿@model List<MVCLearning.Models.Product>
+@*@using MVCLearning.Helpers : Included in "Views.Web.config"*@
+
+@{
+    ViewBag.Title = "List";
+
+    ViewBag.Title = "Index";
+    var number = 12;
+    var data = "some text...";
+    <h2>line1: @data</h2>
+
+    @:line-2: @data
+    <‪br /><text>line-3:</text> @data
+}
+
+<h2>List</h2>
+
+<‪br />
+site@(data)
+
+<‪br />
+@@name
+
+<‪br />
+@(number / 10)
+
+<h2>HTMLHelper Test</h2>
+@Html.MyLabel_string("firstName", "First Name:")
+<br>    </br>
+@Html.MyLabel_MvcHtmlString("firstName", "First Name:")
+<br>    </br>
+@Html.MyLabel_MvcHtmlStringUsingTagBuilder("firstName", "First Name:")
+<br>    </br>
+
+<h2>Declarative HTML Helpers Test1</h2>
+@ProductsList.GetProductsList(@Model)
+
+<h2>Declarative HTML Helpers Test2</h2>
+@ProductsList.GetProductsTable(this, @Model)
