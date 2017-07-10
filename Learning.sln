@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCLearning", "MVCLearning\MVCLearning.csproj", "{853E9C1F-100E-4EFD-BA51-B052A5A5FCFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814} = {48C9FF30-0A4D-4AAB-8830-37A43E800814}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceLearning", "WcfServiceLearning\WCFServiceLearning.csproj", "{48C9FF30-0A4D-4AAB-8830-37A43E800814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceLearningTests", "WCFServiceLearningTests\WCFServiceLearningTests.csproj", "{40C254AA-54C3-4D03-8579-E93FA44E1282}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,22 @@ Global
 		{853E9C1F-100E-4EFD-BA51-B052A5A5FCFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{853E9C1F-100E-4EFD-BA51-B052A5A5FCFB}.Release|x86.ActiveCfg = Release|x86
 		{853E9C1F-100E-4EFD-BA51-B052A5A5FCFB}.Release|x86.Build.0 = Release|x86
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Debug|x86.Build.0 = Debug|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Release|x86.ActiveCfg = Release|Any CPU
+		{48C9FF30-0A4D-4AAB-8830-37A43E800814}.Release|x86.Build.0 = Release|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Debug|x86.Build.0 = Debug|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Release|x86.ActiveCfg = Release|Any CPU
+		{40C254AA-54C3-4D03-8579-E93FA44E1282}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
